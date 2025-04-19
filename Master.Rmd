@@ -42,10 +42,10 @@ library(caret)
 
 ```{r}
 # Import datasets
-bm.train <- read.csv("benchmark_training_loan_data.csv", header = TRUE, row.names = 1)
-bm.test <- read.csv("benchmark_testing_loan_data.csv", header = TRUE, row.names = 1)
-bm.valid <- read.csv("benchmark_validation_loan_data.csv", header = TRUE, row.names = 1)
-ev <- read.csv("extendend_version_loan_data.csv", header = TRUE, row.names = 1)
+bm.train <- read.csv("data/benchmark_training_loan_data.csv", header = TRUE, row.names = 1)
+bm.test <- read.csv("data/benchmark_testing_loan_data.csv", header = TRUE, row.names = 1)
+bm.valid <- read.csv("data/benchmark_validation_loan_data.csv", header = TRUE, row.names = 1)
+ev <- read.csv("data/extendend_version_loan_data.csv", header = TRUE, row.names = 1)
 ```
 
 
