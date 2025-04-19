@@ -10,6 +10,11 @@ Banks face significant risks when customers default on loans. The challenge lies
 - Balancing false positives (flagging good customers) vs. false negatives (missing customers that are proned to default)
 - Building models that align with real-world banking criteria
 
+## Aims and Objectives
+- Visualize relationships between covariates and response varaible, avoiding multicollinearity between highly correlated variables
+- Select important covariates through EDA to identify covariates that contribute significantly to model performance
+- Investigate the model performance across the two use cases
+
 ## Tools and Technologies
 - **Language**: R
 - **Environment**: RStudio
