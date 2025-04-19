@@ -1,47 +1,27 @@
-# MXN600
+# Credit Risk Prediction Modelling
 
-## Github set up
-3 different files for us to work independently.
-1 master file where we add final code that works
-readme - instructions, notes to self and others, etc.
-data files = data files
-variable name file to detail the variable names
+This group project aims to predict the likelihood of loan default using generalized linear models with binomial regression. We explored predictors using logistic regression and compared several models based on various performance metrics such as AUC, Gini Index, accuracy, and sensitivity. Our goal is to **maximize the detection of potential loan defaulters** while maintaining balanced overall performance. 
 
+We first visualized the data the data to understand the effect of each covariate on the response variable. Based on the insights found, we tested different combinations of covariates to evaluate model performance and selected the most suitable models for different use cases - 1. maximised sensitivity for default detection; 2. balanced performance across all metrics
 
-## Variable Names
-bm.test - benchmark testing data
-bm.train - benchmark training data
-bm.valid - benchmark validation data
-ev - extended dataset (for parts 3-5 part of Assignment)
+## Problem Statement
+Banks face significant risks when customers default on loans. The challenge lies in:
+- Accurately predicting which applicants are most likely to default
+- Balancing false positives (flagging good customers) vs. false negatives (missing customers that are proned to default)
+- Building models that align with real-world banking criteria
 
+## Tools and Technologies
+- **Language**: R
+- **Environment**: RStudio
+- **Report Format**: R Markdown (`.Rmd`) for visualizations and model comparisons
 
-## Example names
-bm.train.glm.full - fitting a full glm model to training data
+## Project Structure
+- Master.Rmd (data exploration, modelling, model evaluation)
+- data_cleanup.R (data cleaning and preprocessing)
 
-
-Arnald - look at graphs, how can we change the graph, graphs to include in the SoaP (definitely in the RoC and converge to Gini in the plot)
-Ian - function creation, 
-Morgan - continue model fit testing
-
-
-
-## 11/10/2023
-Arnald: task 2, exploratory plots for ev, powerpoint, soap
-Morgan: chi sqaure for ian vs my model, fitting extended model
-Ian: variable scaling etc., another model test?
-
-# Presentation feedback
-Don't use linear regression/correlation plots to explore a binary outcome. Better off putting repay_fail on x-axis and using boxplots are bar charts the way Arnald has for other plots.
-
-Don't justify removing covariates based on level of significance in model summary.
-
-# Going forward:
-Arnald to adjust the exploratory plots.
-Morgan to streamline and finalise model selection and fit.
-
-Select 2 models - one for the use case of predicting most loan defaults. The other for the use case of the greatest overall accuracy of loan repayment (repay in full or default).
-
-Meet next wednesday to finalise report.
+## Credits
+This project was completed as part of a coursework. This repository is maintained individually for portfolio purposes. 
+- Authors: Ka Long Arnald Shek, Morgan Ellis, Ian Daniel
 
 
 
